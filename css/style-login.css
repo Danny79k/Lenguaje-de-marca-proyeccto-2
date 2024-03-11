@@ -1,0 +1,30 @@
+body{
+
+    background-image:url('img/gym.gif');
+    background-repeat:repeat;
+    background-size: cover;
+}
+
+span.padding-custom{
+
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+#exitoso{
+
+    display:none;
+}
+
+#denegado {
+
+    display:none;
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }

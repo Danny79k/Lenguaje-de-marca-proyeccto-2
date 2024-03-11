@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"><link rel="stylesheet" href="../css/color.css">
+    <title>Culturismo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+</head>
+<body class="darktheme darkpagetheme">
+    <header class="container-fluid bg-dark text-light text-center border-bottom">
+        <h1 class="display-1">Deporte</h1>
+        <p class="lead fs-4">Suplementacion, ejericicios y mucho mas...</p>
+    </header>
+    <nav class="container d-flex col-12 flex-wrap justify-content-around bg-secondary-subtle sticky-top shadow">
+        <a class=" link-underline link-underline-opacity-0 text-dark align-items-stretch p-4" href="../index.html">Inicio</a>
+        <a class=" link-underline link-underline-opacity-0 text-light align-items-stretch p-4 text-bg-primary" href="../ejercicios/pectorales.html">ejercicios</a>
+        <a class=" link-underline link-underline-opacity-0 text-dark align-items-stretch p-4" href="../galeria.html">Galeria</a>    
+        <a class=" link-underline link-underline-opacity-0 text-dark align-items-stretch p-4" href="../submit.html">suscribete</a>
+        <div class="btn-group">
+            <div class="btn-group">
+              <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown">Cuenta</button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item pb-3 disabled" href="#">Notificaciones<div class="badge bg-danger ms-1">4</div><div class="spinner-border spinner-border-sm"></div>
+                </a>
+                <a class="dropdown-item text-danger border-top" href="../login.html">Logout</a>
+              </div>
+            </div>
+          </div>
+          <div class="btn-group">
+            <button class="btn" onclick="aumentaTamano()">+</button>
+            <button class="btn" onclick="restableceTamano()">+/-</button>
+            <button class="btn" onclick="reduceTamano()">-</button>
+            <button class="btn dropdown-toggle" data-bs-toggle="dropdown">cambiaColor</button>
+            <div class="dropdown-menu">
+              <div class="d-flex">
+                <button class="btn dropdown-item" onclick="cambiaColorVerde()" id="prueba">🟩</button>
+                <button class="btn dropdown-item" onclick="cambiaColorRojo()" id="prueba">🟥</button>
+                <button class="btn dropdown-item" onclick="cambiaColorAzul()" id="prueba">🟦</button>
+                <button class="btn dropdown-item" onclick="cambiaColorNegro()" id="prueba">⬛</button>
+              </div>
+            </div>
+          </div>
+    </nav>
+    <main class="container bg-black shadow-lg text-light">
+        <div class="row">
+            <article class="col-xl-9 p-5">
+                <!-- navs -->
+                <section class="pt-4">
+                    <h2 class="display-3">Squat</h2>
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item">
+                          <a class="nav-link active text-warning" data-bs-toggle="tab" href="#squat">Sentadilla en barra</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-warning" data-bs-toggle="tab" href="#hack">Hack Squat</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-warning" data-bs-toggle="tab" href="#bulgara">Sentadilla Bulgara</a>
+                        </li>
+                      </ul>
+                      <div class="tab-content">
+                        <div class="tab-pane container active" id="squat">
+                            <h3>Sentadilla en Barra</h3>
+                            <p>La sentadilla en barra es un ejercicio muy efectivo para trabajar los músculos de las piernas y los glúteos. Hay diferentes formas de realizar este ejercicio, como la sentadilla con barra alta y la sentadilla con barra baja. A continuación, te proporcionaré información sobre ambas técnicas</p>
+                            <div class="row pt-2">
+                                <img src="../img/sentadilla.jpg" alt="img" class="col" style="scale: 70%;">
+                            </div>
+                        </div>
+                        <div class="tab-pane container fade" id="hack">
+                            <h3>Hack Squat</h3>
+                            <p>El Hack Squat es un ejercicio que se utiliza para trabajar los músculos de las piernas, especialmente los cuádriceps. Este ejercicio se realiza utilizando una máquina específica llamada Hack Squat Machine.</p>
+                            <div class="row pt-2">
+                                <img src="../img/hacksquat.jpg" alt="img" class="col" style="scale: 70%;">
+                            </div>
+                        </div>
+                        <div class="tab-pane container fade" id="bulgara">
+                            <h3>Sentadilla Bulgara</h3>
+                            <p>La sentadilla búlgara es un ejercicio que se utiliza para trabajar los músculos de las piernas, especialmente los cuádriceps, los glúteos y los isquiotibiales. También ayuda a fortalecer los estabilizadores de la cadera y mejora el equilibrio y la coordinación.</p>
+                            <div class="row pt-2">
+                                <img src="../img/sentadilla_bulgara.jpeg" alt="img" class="col" style="scale: 70%;">
+                            </div>
+                        </div>
+                      </div>
+                </section>
+                <!-- navs -->
+                <section class="pt-4">
+                    <h2 class="display-3">Prensas</h2>
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item">
+                          <a class="nav-link active text-warning" data-bs-toggle="tab" href="#incl">Prensa inclinada</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-warning" data-bs-toggle="tab" href="#90">prensa 90º</a>
+                        </li>
+                      </ul>
+                      <div class="tab-content">
+                        <div class="tab-pane container active" id="incl">
+                            <h3>Prensa inclinada</h3>
+                            <p>La prensa inclinada es un ejercicio para las piernas que trabaja principalmente los glúteos y los cuádriceps, pero también involucra otros músculos en el movimiento. Se realiza utilizando una máquina específica donde se coloca la espalda en un respaldo inclinado y se empuja con los pies sobre una plataforma.</p>
+                            <div class="row pt-2">
+                                <img src="../img/prensa_inc.jpg" alt="img" class="col" style="scale: 70%;">
+                            </div>
+                        </div>
+                        <div class="tab-pane container fade" id="90">
+                            <h3>prensa vertical</h3>
+                            <p>La prensa vertical para piernas es una máquina de musculación que permite trabajar de manera eficiente y efectiva los músculos de las piernas. Esta máquina involucra prácticamente toda la musculatura de las piernas, incluyendo los cuádriceps, los isquiotibiales, los glúteos y los músculos de la cadera. También ayuda a estabilizar la pelvis durante el movimiento.
+                            </p>
+                            <div class="row pt-2">
+                                <img src="../img/prensa.jpg" alt="img" class="col" style="scale: 70%;">
+                            </div>
+                        </div>
+                      </div>
+                </section>         
+                <div>
+                    <ul class="pagination pagination-lg d-flex justify-content-center">
+                        <li class="page-item"><a class="page-link bg-warning text-dark" href="../ejercicios/pectorales.html"><strong>1</strong></a></li>
+                        <li class="page-item"><a class="page-link bg-warning text-dark" href="../ejercicios/cuadriceps.html"><strong>2</strong></a></li>
+                        <li class="page-item"><a class="page-link bg-warning text-dark" href="../ejercicios/triceps.html"><strong>3</strong></a></li>
+                        <li class="page-item"><a class="page-link bg-warning text-dark" href="../ejercicios/biceps.html"><strong>4</strong></a></li>
+                    </ul>
+                </div>
+            </article>
+            <aside class="col-xl-3 d-flex flex-column p-5 bg-dark">
+                <div class="sticky-top d-flex flex-column pt-5 z-1">
+                    <a href="../ejercicios/pectorales.html" class="mt-5 link-underline link-underline-opacity-0 py-4 text-light border-bottom border-dark text-center">Pectorales</a>
+                    <a href="../ejercicios/cuadriceps.html" class=" link-underline link-underline-opacity-0 py-4 text-dark border-top border-bottom border-dark text-center text-bg-warning">cuadriceps</a>
+                    <a href="../ejercicios/triceps.html" class=" link-underline link-underline-opacity-0 py-4 text-light border-top border-bottom border-dark text-center">Triceps</a>
+                    <a href="../ejercicios/biceps.html" class=" link-underline link-underline-opacity-0 py-4 text-light border-top border-dark text-center">Biceps</a>
+                </div>
+            </aside>
+        </div> 
+    </main>
+    <footer class="container-fluid bg-dark text-light pt-5 pb-5 text-center">
+        <span class="pt-5">made by danny belloli</span>
+    </footer>
+    <!-- script -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <script src="../javascript/font-size.js"></script>
+</body>
+</html>

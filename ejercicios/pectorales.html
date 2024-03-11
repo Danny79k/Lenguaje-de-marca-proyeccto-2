@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"><link rel="stylesheet" href="../css/color.css">
+    <title>Culturismo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+</head>
+<body class="darktheme darkpagetheme">
+    <header class="container-fluid bg-dark text-light text-center border-bottom">
+        <h1 class="display-1">Deporte</h1>
+        <p class="lead fs-4">Suplementacion, ejericicios y mucho mas...</p>
+    </header>
+    <nav class="container d-flex col-12 flex-wrap justify-content-around bg-secondary-subtle sticky-top shadow">
+        <a class=" link-underline link-underline-opacity-0 text-dark align-items-stretch p-4" href="../index.html">Inicio</a>
+        <a class=" link-underline link-underline-opacity-0 text-light align-items-stretch p-4 text-bg-primary" href="../ejercicios/pectorales.html">ejercicios</a>
+        <a class=" link-underline link-underline-opacity-0 text-dark align-items-stretch p-4" href="../galeria.html">Galeria</a>    
+        <a class=" link-underline link-underline-opacity-0 text-dark align-items-stretch p-4" href="../submit.html">suscribete</a>
+        <div class="btn-group">
+            <div class="btn-group">
+              <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown">Cuenta</button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item pb-3 disabled" href="#">Notificaciones<div class="badge bg-danger ms-1">4</div><div class="spinner-border spinner-border-sm"></div>
+                </a>
+                <a class="dropdown-item text-danger border-top" href="../login.html">Logout</a>
+              </div>
+            </div>
+          </div>
+          <div class="btn-group">
+            <button class="btn" onclick="aumentaTamano()">+</button>
+            <button class="btn" onclick="restableceTamano()">+/-</button>
+            <button class="btn" onclick="reduceTamano()">-</button>
+            <button class="btn dropdown-toggle" data-bs-toggle="dropdown">cambiaColor</button>
+            <div class="dropdown-menu">
+              <div class="d-flex">
+                <button class="btn dropdown-item" onclick="cambiaColorVerde()" id="prueba">🟩</button>
+                <button class="btn dropdown-item" onclick="cambiaColorRojo()" id="prueba">🟥</button>
+                <button class="btn dropdown-item" onclick="cambiaColorAzul()" id="prueba">🟦</button>
+                <button class="btn dropdown-item" onclick="cambiaColorNegro()" id="prueba">⬛</button>
+              </div>
+            </div>
+          </div>
+    </nav>
+    <main class="container bg-black shadow-lg text-light">
+        <div class="row">
+            <article class="col-xl-9 p-5">
+                <!-- navs -->
+                <section class="pt-4">
+                    <h2 class="display-3">Pectoral</h2>
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item">
+                          <a class="nav-link active text-warning" data-bs-toggle="tab" href="#plana">Banca Plana</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-warning" data-bs-toggle="tab" href="#press">Chest Press</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-warning" data-bs-toggle="tab" href="#over">Overhead Press</a>
+                        </li>
+                      </ul>
+                      <div class="tab-content">
+                        <div class="tab-pane container active" id="plana">
+                            <h3>Banca Plana</h3>
+                            <p>El ejercicio de la banca plana consiste en tumbarse boca arriba en una banca y levantar una barra con movimientos precisos, manteniendo los codos paralelos y la barra a la altura de los pezones estimulando asi todo el gran  pectoral</p>
+                            <div class="row pt-2">
+                                <img src="../img/bench_press.jpg" alt="img" class="col" style="scale: 70%;">
+                            </div>
+                        </div>
+                        <div class="tab-pane container fade" id="press">
+                            <h3>Chest Press</h3>
+                            <p>el chest press consiste en una variante de la banca plana usando dos mancuernas en vez de una barra, esto favorece una mejor conexion mente musculo asi como un desarrollo mas personalizado en caso de disonancia muscular</p>
+                            <div class="row pt-2">
+                                <img src="../img/chest_press.jpg" alt="img" class="col" style="scale: 70%;">
+                            </div>
+                        </div>
+                        <div class="tab-pane container fade" id="over">
+                            <h3>Overhead Press</h3>
+                            <p>El ejercicio favorite de nuestro Terminator, cosnsiste en llevar una mancuera detras de la cabeza y agarrarla por la parte ancha de las extremidades, en posición sentada con la espalda recta vamos levantando la mancuerna sobre nuestra cabeza con movimientos largos y controlados</p>
+                            <div class="row pt-2">
+                                <img src="../img/overhead.webp" alt="img" class="col" style="scale: 70%;">
+                            </div>
+                        </div>
+                      </div>
+                </section>
+                <!-- navs -->
+                <section class="pt-4">
+                    <h2 class="display-3">Pectoral superior</h2>
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item">
+                          <a class="nav-link active text-warning" data-bs-toggle="tab" href="#inc">Bench inclinado</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-warning" data-bs-toggle="tab" href="#aperturas">aperturas</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-warning" data-bs-toggle="tab" href="#flex">flexiones inclinadas</a>
+                        </li>
+                      </ul>
+                      <!-- pestañas de nav -->
+                      <div class="tab-content">
+                        <div class="tab-pane container active" id="inc">
+                            <h3>bench inclinado</h3>
+                            <p>El press inclinado o bench press inclinado es un ejercicio que se realiza en un banco inclinado, generalmente con un ángulo de entre 45 y 60 grados1. Este ejercicio se utiliza principalmente para entrenar la parte superior del pectoral mayor (el músculo grande del pecho) y el pectoral menor (el músculo pequeño del pecho)</p>
+                            <div class="row pt-2">
+                                <img src="../img/incline-bench-press.webp" alt="img" class="col" style="scale: 70%;">
+                            </div>
+                        </div>
+                        <div class="tab-pane container fade" id="aperturas">
+                            <h3>aperturas</h3>
+                            <p>Las aperturas con mancuernas son un ejercicio de aislamiento que se realiza generalmente después de los ejercicios compuestos como el press banca1. Este ejercicio es muy útil para desarrollar el ancho de la caja torácica y es perfecto para acabar el entrenamiento de pecho</p>
+                            <div class="row pt-2">
+                                <img src="../img/aperturas-con-mancuernas.jpeg" alt="img" class="col" style="scale: 70%;">
+                            </div>
+                        </div>
+                        <div class="tab-pane container fade" id="flex">
+                            <h3>flexiones inclinadas</h3>
+                            <p>Las flexiones inclinadas son un ejercicio de calistenia que se realiza con las manos apoyadas en una superficie elevada, como una banqueta o un banco. Este ejercicio es ideal para principiantes y es una excelente manera de trabajar los músculos de la parte superior del cuerpo, especialmente los músculos del pecho, tríceps y hombros.</p>
+                            <div class="row pt-2">
+                                <img src="../img/flex.jpg" alt="img" class="col" style="scale: 70%;">
+                            </div>
+                        </div>
+                      </div>
+                </section>         
+                <div>
+                    <ul class="pagination pagination-lg d-flex justify-content-center">
+                        <li class="page-item"><a class="page-link bg-warning text-dark" href="../ejercicios/pectorales.html"><strong>1</strong></a></li>
+                        <li class="page-item"><a class="page-link bg-warning text-dark" href="../ejercicios/cuadriceps.html"><strong>2</strong></a></li>
+                        <li class="page-item"><a class="page-link bg-warning text-dark" href="../ejercicios/triceps.html"><strong>3</strong></a></li>
+                        <li class="page-item"><a class="page-link bg-warning text-dark" href="../ejercicios/biceps.html"><strong>4</strong></a></li>
+                    </ul>
+                </div>
+            </article>
+            <aside class="col-xl-3 d-flex flex-column p-5 bg-dark">
+                <div class="sticky-top d-flex flex-column pt-5 z-1">
+                    <a href="../ejercicios/pectorales.html" class="mt-5 link-underline link-underline-opacity-0 py-4 text-dark border-bottom border-dark text-center text-bg-warning">Pectorales</a>
+                    <a href="../ejercicios/cuadriceps.html" class=" link-underline link-underline-opacity-0 py-4 text-light border-top border-bottom border-dark text-center">cuadriceps</a>
+                    <a href="../ejercicios/triceps.html" class=" link-underline link-underline-opacity-0 py-4 text-light border-top border-bottom border-dark text-center">Triceps</a>
+                    <a href="../ejercicios/biceps.html" class=" link-underline link-underline-opacity-0 py-4 text-light border-top border-dark text-center">Biceps</a>
+                </div>
+            </aside>
+        </div> 
+    </main>
+    <footer class="container-fluid bg-dark text-light pt-5 pb-5 text-center">
+        <span class="pt-5">made by danny belloli</span>
+    </footer>
+    <!-- script -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <script src="../javascript/font-size.js"></script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"> <link rel="stylesheet" href="../css/color.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <title>Culturismo</title>
+</head>
+<body>
+    <header class="container-fluid text-center border-bottom bg-dark text-light">
+        <h1 class="display-1">Deporte</h1>
+        <p class="lead fs-4">Suplementacion, ejericicios y mucho mas...</p>
+    </header>
+    <nav class="container d-flex flex-wrap justify-content-around bg-secondary-subtle sticky-top">
+        <a class=" link-underline link-underline-opacity-0 text-dark align-items-stretch p-4" href="../index.html">Inicio</a>
+        <a class=" link-underline link-underline-opacity-0 text-light align-items-stretch p-4 text-bg-primary" href="../ejercicios/pectorales.html">ejercicios</a>
+        <a class=" link-underline link-underline-opacity-0 text-dark align-items-stretch p-4" href="../galeria.html">Galeria</a>
+        <a class=" link-underline link-underline-opacity-0 text-dark align-items-stretch p-4" href="../submit.html">suscribete</a>
+        <div class="btn-group">
+            <div class="btn-group">
+              <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown">Cuenta</button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item pb-3 disabled" href="#">Notificaciones<div class="badge bg-danger ms-1">4</div><div class="spinner-border spinner-border-sm"></div>
+                </a>
+                <a class="dropdown-item text-danger border-top" href="login.html">Logout</a>
+              </div>
+            </div>
+          </div>
+          <div class="btn-group">
+            <button class="btn" onclick="aumentaTamano()">+</button>
+            <button class="btn" onclick="restableceTamano()">+/-</button>
+            <button class="btn" onclick="reduceTamano()">-</button>
+            <button class="btn dropdown-toggle" data-bs-toggle="dropdown">cambiaColor</button>
+            <div class="dropdown-menu">
+              <div class="d-flex">
+                <button class="btn dropdown-item" onclick="cambiaColorVerde()" id="prueba">🟩</button>
+                <button class="btn dropdown-item" onclick="cambiaColorRojo()" id="prueba">🟥</button>
+                <button class="btn dropdown-item" onclick="cambiaColorAzul()" id="prueba">🟦</button>
+                <button class="btn dropdown-item" onclick="cambiaColorNegro()" id="prueba">⬛</button>
+              </div>
+            </div>
+          </div>
+    </nav>
+    <main class="container bg-black text-light">
+        <div class="row">
+            <article class="col-xl-9 p-5">
+                <h2 class="display-2 pb-4 border-bottom">Triceps</h2>
+                <section  class="pt-4">
+                    <h2 class="display-3">tricep corto</h2>
+                    Las patadas de tríceps son un ejercicio muy común y popular para desarrollar los músculos tríceps de tus brazos. Este ejercicio es altamente efectivo y puede ser realizado casi en cualquier lugar, siempre y cuando cuentes con una mancuerna a la mano. No se busca ganar fuerza en el músculo con este ejercicio, sino desarrollar su forma.
+                    <div class="row pt-2">
+                        <img src="../img/tricep_patada.webp" alt="" style="scale: 70%;">
+                    </div>
+                </section>
+                <section class="pt-4">
+                    <h2 class="display-3">Tricep largo</h2>
+                    El entrenamiento de tríceps en polea es una excelente manera de trabajar los músculos del tríceps. Aquí te presento algunos ejercicios que puedes realizar en la polea para trabajar tus tríceps
+                    <div class="row pt-2">
+                        <img src="../img/tricep_polea.webp" alt="" style="scale: 70%;">
+                    </div>
+                </section>
+                <div class="mt-4">
+                    <ul class="pagination pagination-lg d-flex justify-content-center">
+                        <li class="page-item"><a class="page-link bg-warning text-dark" href="../ejercicios/pectorales.html"><strong>1</strong></a></li>
+                        <li class="page-item"><a class="page-link bg-warning text-dark" href="../ejercicios/cuadriceps.html"><strong>2</strong></a></li>
+                        <li class="page-item"><a class="page-link bg-warning text-dark" href="../ejercicios/triceps.html"><strong>3</strong></a></li>
+                        <li class="page-item"><a class="page-link bg-warning text-dark" href="../ejercicios/biceps.html"><strong>4</strong></a></li>
+                    </ul>
+                </div>
+            </article>
+            <aside class="col-xl-3 p-5 bg-dark">
+                <div class="sticky-top d-flex flex-column pt-5 z-1">
+                    <a href="../ejercicios/pectorales.html" class="mt-5 link-underline link-underline-opacity-0 py-4 text-light border-bottom border-dark text-center">Pectorales</a>
+                    <a href="../ejercicios/cuadriceps.html" class=" link-underline link-underline-opacity-0 py-4 text-light border-top border-bottom border-dark text-center">Cuadriceps</a>
+                    <a href="../ejercicios/triceps.html" class=" link-underline link-underline-opacity-0 py-4 text-dark border-top border-bottom border-dark text-center text-bg-warning">Triceps</a>
+                    <a href="../ejercicios/biceps.html" class=" link-underline link-underline-opacity-0 py-4 text-light border-top border-bottom border-dark text-center">Biceps</a>
+                </div>
+            </aside>
+        </div>
+    </main>
+    <footer class="container-fluid bg-dark pt-5 pb-3 text-center text-light">
+        <span class="pt-5">made by danny belloli</span>
+    </footer>
+    <!-- script -->
+    <script src="../javascript/font-size.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+</body>
+</html>
