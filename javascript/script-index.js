@@ -76,7 +76,7 @@ document.getElementById("musculo-custom-2").innerHTML = d
 document.getElementById("musculo-custom-3").innerHTML = g
 document.getElementById("musculo-custom-4").innerHTML = l
 
-document.getElementById("ejercicio-custom-1").innerHTML = b 
+document.getElementById("ejercicio-custom-1").innerHTML = b
 document.getElementById("ejercicio-custom-2").innerHTML = e
 document.getElementById("ejercicio-custom-3").innerHTML = h
 document.getElementById("ejercicio-custom-4").innerHTML = m
